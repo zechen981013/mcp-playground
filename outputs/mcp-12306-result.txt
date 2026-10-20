@@ -1,4 +1,4 @@
-C:\tools\uv\uv.exe run D:/huanghoulin/scott-mcp-20260905/.venv/Scripts/python.exe "D:\huanghoulin\scott-mcp-20260905\CH01 使用mcp调用12306.py"
+uv run mcp-12306.py
 我查询到了明天（2026年9月6日）深圳到长沙的大量车次信息。共有81个车次，其中高铁（G/D/C字头）主要从**深圳北/福田站**出发到达**长沙南站**，普速列车（Z/K/T字头）从**深圳东/深圳站**出发到达**长沙站**。
 
 由于车次较多，我先为您整理出一份**高铁动车**车次的余票信息表格，随后附上普速列车的信息。
