@@ -1,0 +1,6 @@
+uv add langchain langchain-mcp-adapters langchain-openai
+uv add python-dotenv
+uv add langchain-openai
+
+# 完整版
+uv add "mcp[cli]"

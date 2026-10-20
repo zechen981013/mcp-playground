@@ -1,0 +1,24 @@
+C:\tools\uv\uv.exe run D:/huanghoulin/scott-mcp-20260905/.venv/Scripts/python.exe "D:\huanghoulin\scott-mcp-20260905\CH08  中间件 转账.py"
+=== HumanInTheLoopMiddleware 演示 (使用 invoke) ===
+场景：用户让 Agent 转账，Agent 在执行前会暂停等待批准。
+
+[User]: 请帮我转账 100 元给 Alice
+--------------------------------------------------
+[Agent] 调用工具: transfer_money({'amount': 100, 'to_account': 'Alice'})
+
+⏸️  检测到中断，等待人工审核...
+
+📋 待审核操作: transfer_money
+   参数: {'amount': 100, 'to_account': 'Alice'}
+  请选择 (a=批准, r=拒绝, e=编辑): a
+   ✅ 已批准
+
+🔄 继续执行...
+--------------------------------------------------
+!!! 正在执行转账: 100 -> Alice !!!
+[Agent] 调用工具: transfer_money({'amount': 100, 'to_account': 'Alice'})
+[Tool] 成功转账 100 元给 Alice。
+
+✅ 任务完成
+
+Process finished with exit code 0
